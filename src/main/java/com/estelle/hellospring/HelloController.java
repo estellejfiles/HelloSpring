@@ -16,6 +16,9 @@ public class HelloController {
         String name = "Estelle";
         // add variable as attribute to model
         model.addAttribute("name", name);
+        // add more attributes (variable pairs) to the model
+        model.addAttribute("className", "Java");
+        model.addAttribute("classCode", 2545);
         // returns this string; represents mustache html template
         return "hello";
     }
